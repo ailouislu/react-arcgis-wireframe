@@ -1,0 +1,111 @@
+
+:root {
+  --color-primary: #1CA5E8;
+  --color-secondary: #72DF4B;
+  --color-accent: #E8687F;
+  --color-font: white;
+  --color-circle: white;
+  --color-box: #00ab70;
+  --color-body: #918ca4;
+  --color-body-darker: #5c5577;
+  --color-border: black;
+  --color-box-shadow: #8D8C90;
+  --border-radius: 30px;
+}
+
+.app-container {
+  height: 100%;
+  width:  100%;
+}
+
+.map-view {
+  height: 100vh;
+}
+
+.state {
+  background-color: var(--color-box);
+  /* box-sizing: border-box; */
+  /* flex-wrap: wrap; */
+  /* margin: 3rem auto; */
+  padding-bottom: 2.5rem;
+  box-shadow: 5px 5px 10px -1px var(--color-box-shadow) !important;
+}
+
+.state-title {
+  color: var(--color-font);
+  font-size: 1.6rem;
+  margin: 0.5rem 0 0.3rem 1rem;
+}
+
+.state-circle {
+  background-color: var(--color-circle);
+  height: 6rem;
+  width: 6rem;
+  float: left;
+  margin: 0.7rem 1.6rem 1rem 0;
+  border-radius: 50%;
+}
+
+.circle1 {
+  margin-left: 1.6rem;
+}
+
+.state-label {
+  font-size: 1.7rem;
+  position: absolute;
+  font-weight: 600;
+  padding-top: 1.7rem;
+  text-align: center;
+}
+
+.label1 {
+  color: var(--color-primary);
+  padding-left: 1.1rem;
+}
+
+.label2 {
+  color: var(--color-accent);
+  padding-left: 1.3rem;
+}
+
+.label3 {
+  color: var(--color-secondary);
+  padding-left: 1.1rem;
+}
+
+.label4 {
+  color: var(--color-secondary);
+  font-size: 0.9rem;
+  padding-left: 4.3rem;
+  padding-top: 2rem;
+}
+
+.state-bottom-label {
+  font-size: 0.7rem;
+  color: var(--color-font);
+  position: absolute;
+  padding-left: 0.2rem;
+  padding-top: 6.5rem;
+  text-align: center;
+}
+
+.bottom-label1 {
+  font-size: 0.6rem;
+  position: absolute;
+  padding-left: 0.6rem;
+  padding-top: 7.4rem;
+}
+
+.bottom-label2 {
+  font-size: 0.6rem;
+  position: absolute;
+  padding-left: 0.9rem;
+  padding-top: 7.4rem;
+}
+
+.bottom-label3 {
+  font-size: 0.7rem;
+  position: absolute;
+  padding-top: 7.2rem;
+  margin-left: -0.4rem;
+}
