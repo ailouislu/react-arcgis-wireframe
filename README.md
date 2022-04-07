@@ -4,8 +4,6 @@ This is an online map system to build the basic wire-frame for showing the state
 
 ## Getting started
 
-You can view a live demo over at http://wireframe.nzlouis.com
-
 To get the frontend running locally:
 
 - Clone this repo
