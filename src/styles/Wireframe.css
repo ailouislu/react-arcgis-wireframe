@@ -109,3 +109,25 @@
   padding-top: 7.2rem;
   margin-left: -0.4rem;
 }
+
+
+#viewDiv {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+#infoDiv {
+  background: white;
+  padding: 10px;
+}
+
+
+.esri-popup__main-container.esri-widget {
+  /* width: 160px !important;
+  max-height: 300px !important; */
+}
+
+.esri-popup__footer {   
+  display: none !important; 
+}
