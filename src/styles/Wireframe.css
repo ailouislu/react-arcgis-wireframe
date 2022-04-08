@@ -124,8 +124,8 @@
 
 
 .esri-popup__main-container.esri-widget {
-  /* width: 160px !important;
-  max-height: 300px !important; */
+  width: 160px !important;
+  max-height: 300px !important;
 }
 
 .esri-popup__footer {   
