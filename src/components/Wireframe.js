@@ -44,24 +44,30 @@ export default function Wireframe() {
       }
     });
 
-    // add legend, layerlist and basemapGallery widgets
-    view.ui.add(
-      [
-        new Expand({
-          content: new Legend({
-            view: view
-          }),
-          view: view,
-          group: "top-left"
-        }),
-      ],
-      "top-left"
-    );
+    view.popup.autoOpenEnabled = false;  // Disable the default popup behavior
+    view.on("click", function(event) { // Listen for the click event
+      view.hitTest(event.screenPoint).then(function (response){ // Search for features where the user clicked
+        var graphic = response.results[0].graphic.attributes;
+        if(graphic && graphic.OBJECTID !== undefined) {
+          view.popup.open({ // open a popup to show some of the results
+            location: event.mapPoint,
+            title: "Site:"+ graphic.OBJECTID
+          });
+        }else{
+          view.popup.close();
+        }
+      })
+    });
+
+    // Adds widget below other elements in the top right corner of the view
+    view.ui.add("stateOfWaterQuality", {
+      position: "top-right"
+    });
 
     // Create a symbol for drawing the point
     const markerSymbol = {
       type: "simple-marker", // autocasts as new SimpleMarkerSymbol()
-      color: "red",
+      color: "#E51354",
       size: 7,
       outline: null
     };
@@ -256,8 +262,8 @@ export default function Wireframe() {
 
     const point18 = {
       type: "point",
-      longitude: 174.268,
-      latitude: -36.974
+      longitude: 174.2717,
+      latitude: -36.3458
     };
       
     const pointGraphic18 = new Graphic({
@@ -319,26 +325,6 @@ export default function Wireframe() {
       pointGraphic19,
       pointGraphic20,
       pointGraphic21]);
-
-    view.popup.autoOpenEnabled = false;  // Disable the default popup behavior
-    view.on("click", function(event) { // Listen for the click event
-      view.hitTest(event.screenPoint).then(function (response){ // Search for features where the user clicked
-        var graphic = response.results[0].graphic.attributes;
-        if(graphic) {
-          view.popup.open({ // open a popup to show some of the results
-            location: event.mapPoint,
-            title: "Site:"+ graphic.OBJECTID
-          });
-        }else{
-          view.popup.close();
-        }
-      })
-    });
-
-    // Adds widget below other elements in the top right corner of the view
-    view.ui.add("stateOfWaterQuality", {
-      position: "top-right"
-    });
 
   }
 
