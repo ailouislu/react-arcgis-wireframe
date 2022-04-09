@@ -25,26 +25,16 @@ const setup = () => {
   };
 };
 
-afterEach(cleanup);
 
-test('should return correct data for the water quality', () => {
-    const averageNitrogen =  getAverageNitrogen();
-    const averagePhosphorus =  getAveragePhosphorus();
-    const nationalStandard =  getNationalStandard();
-    expect(averageNitrogen).toBe("137.1");
-    expect(averagePhosphorus).toBe("33.6");
-    expect(nationalStandard).toBe("48.9");
-})
-
-// it("should return correct length for the getRandomNumbers", () => {
-//   const { wrapper } = setup();
-//   let averageNitrogen = wrapper.instance().getAverageNitrogen();
-//   expect(averageNitrogen).toBe(137.1);
-//   let averagePhosphorus = wrapper.instance().getAveragePhosphorus();
-//   expect(averagePhosphorus).toBe(33.6);
-//   let nationalStandard = wrapper.instance().getNationalStandard();
-//   expect(nationalStandard).toBe(48.9);
-// });
+it("should return correct length for the getRandomNumbers", () => {
+  const { wrapper } = setup();
+  let averageNitrogen = wrapper.instance().getAverageNitrogen();
+  expect(averageNitrogen).toBe(137.1);
+  let averagePhosphorus = wrapper.instance().getAveragePhosphorus();
+  expect(averagePhosphorus).toBe(33.6);
+  let nationalStandard = wrapper.instance().getNationalStandard();
+  expect(nationalStandard).toBe(48.9);
+});
 
 
 
