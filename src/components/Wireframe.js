@@ -12,7 +12,7 @@ export default function Wireframe() {
   const [averagePhosphorus, setAveragePhosphorus] = useState([]);
   const [nationalStandard, setNationalStandard] = useState([]);
 
-  const getData =  () => {
+  const getData = () => {
     setAverageNitrogen(getAverageNitrogen());
     setAveragePhosphorus(getAveragePhosphorus());
     setNationalStandard(getNationalStandard());
