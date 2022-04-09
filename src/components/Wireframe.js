@@ -2,8 +2,6 @@ import React, {useEffect, useState} from 'react';
 import Map from "@arcgis/core/WebMap";
 import MapView from "@arcgis/core/views/MapView"
 import Graphic from "@arcgis/core/Graphic"
-import Expand from "@arcgis/core/widgets/Expand"
-import Legend from "@arcgis/core/widgets/Legend"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import "../styles/Wireframe.css";
 import { getAverageNitrogen, getAveragePhosphorus, getNationalStandard } from "../services/fakeWaterQualityService";
