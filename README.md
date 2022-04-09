@@ -2,6 +2,8 @@
 
 This is an online map system to build the basic wire-frame for showing the state of New Zealand water quality, implemented using react and Arcgis (**[Esri JS API](https://developers.arcgis.com/javascript/latest/api-reference/index.html)**). Contains functions such as wire-frame. The system uses many reusable components to improve the reusability of the project.
 
+![image](src/images/wireframe.jpg)
+
 ## Getting started
 
 To get the frontend running locally:
