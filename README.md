@@ -6,7 +6,7 @@ This is an online map system to build the basic wire-frame for showing the state
 
 ## Getting started
 
-You can view a live demo over at https://wireframe.nzlouis.com
+You can view a live demo over at https://nzlouis.com:3000
 
 
 To get the frontend running locally:
